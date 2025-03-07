@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pisca-pisca</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Projeto Pisca-Pisca</h1>
+    </header>
+
+    <main>
+      <div class="explicao">
+        <div class="descricao-projeto">
+          <h2>Descrição do Projeto</h2>
+          <p>
+            O projeto é uma aplicação web que interage com o Firebase para
+            controlar o estado de um LED (ligado/desligado) por meio de um
+            botão. A interface permite ao usuário visualizar e alterar o estado
+            do LED em tempo real. Quando a página é carregada, o estado atual do
+            LED é sincronizado com o Firebase, e o botão exibe o texto
+            apropriado, como "Ligar" ou "Desligar". O sistema garante que
+            qualquer alteração no estado do LED seja refletida de maneira
+            imediata no banco de dados e na interface do usuário.
+          </p>
+        </div>
+
+        <div class="montagem">
+          <h2>passo a passo para montar</h2>
+          <p>
+            Passo 1: Componentes LED, resistor (330 ou 220 ohms), fios,
+            microcontrolador (ex: Arduino), e fonte de energia. Passo 2:
+            Montagem Conecte o anodo do LED ao pino digital do microcontrolador.
+            Conecte o catodo ao GND do microcontrolador. Coloque o resistor
+            entre o pino do LED e o pino de saída. Passo 3: Conectar ao Firebase
+            Configure o Firebase e obtenha as credenciais para usar no código do
+            microcontrolador. Passo 4: Programação Programe o microcontrolador
+            para ler o estado do LED no Firebase e controlá-lo (ligar/desligar).
+            Passo 5: Testar Verifique se o botão na interface altera o estado do
+            LED no circuito corretamente.
+          </p>
+        </div>
+      </div>
+
+      <div class="foto-projeto">
+        <img src="imagem.png" alt="foto" />
+      </div>
+
+      <p>
+        Ao clicar no botão abaixo, será possível ligar e desligar o LED
+        controlado pelo microcontrolador.
+      </p>
+
+      <button id="botao">Ligar</button>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

@@ -111,3 +111,22 @@ button:hover {
   background-color: rgb(40, 40, 160);
   letter-spacing: 0.5px;
 }
+
+.rodape{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+}
+
+.rodape p {
+  color:white
+}
+
+.rodape a {
+   
+  color: lightskyblue; 
+ 
+}

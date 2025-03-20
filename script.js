@@ -22,7 +22,7 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const database = getDatabase(app);
 
-const ledRef = ref(database, "led");
+const ledRef = ref(database, "led/state");
 const botao = document.getElementById("botao");
 
 function atualizarBotao(snapshot) {
